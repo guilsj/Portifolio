@@ -13,6 +13,21 @@ body {
     height: 100vh;
 }
 
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    text-decoration: none;
+    color: #22D4FD;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}   
+
 .pagina-inicial {
     margin: 10% 15%;
     display: flex;
@@ -27,6 +42,9 @@ body {
 
 .pagina-inicial__conteudo {
     width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .pagina-inicial__conteudo__titulo {
@@ -35,28 +53,78 @@ body {
 }
 
 .pagina-inicial__conteudo__paragrafo {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 24px;
-    font-weight: 400;
-    margin: 40px 0;
 }
 
-.pagina-inicial__conteudo__botoes {
+.conteudo__botoes {
     display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.conteudo__botoes__link {
+    box-sizing: border-box;
+    border: 1px solid #22D4FD;
+    width: 378px;
+    height: 68px;
+    padding: 21px 0;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #F6F6F6;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo__botoes__titulo {
+    font-family: "Krona One", sans-serif;
+    font-size: 24px;
+}
+
+.conteudo__botoes__link__logo {
+    margin: 0 16px;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    background-color: #22D4FD;
+    color: #000000;
+    align-items: center;
+}
+
+.rodape__informacao {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+}
+
+.pagina-sobre-mim {
+    margin: 10% 15%;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-.pagina-inicial__conteudo__botoes__link {
-    box-sizing: border-box;
-    background-color: #22D4FD;
-    width: 280px;
-    height: 79px;
-    text-align: center;
-    padding: 21px 0;
-    border-radius: 16px;
-    text-decoration: none;
-    color: #000000;
-    font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+.pagina-sobre-mim__conteudo {
+    width: 574px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.pagina-sobre-mim__conteudo__titulo {
+    font-family: 'Krona one', sans-serif;
+    font-size: 36px;
+}
+
+.pagina-sobre-mim__conteudo__paragrafo {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 24px; 
 }
