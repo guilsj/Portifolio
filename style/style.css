@@ -23,7 +23,7 @@ body {
 
 .cabecalho {
     display: flex;
-    padding: 5% 0% 0% 10%;
+    padding: 5% 0% 0% 8%;
 }
 
 .cabecalho__menu {
@@ -34,7 +34,7 @@ body {
 .cabecalho__menu__link {
     color: var(--cor-terciaria);
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     text-decoration: none;
 
 }
@@ -43,12 +43,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 8% 10% 5% 10%;
+    padding: 8%;
     gap: 40px;
 }
 
 .principal__conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -56,7 +56,7 @@ body {
 
 .principal__conteudo__titulo {
     font-family: var(--fonte-primaria);
-    font-size: 36px;
+    font-size: 2.25rem;
 }
 
 .titulo-destaque {
@@ -65,7 +65,7 @@ body {
 
 .principal__conteudo__paragrafo {
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .principal__conteudo__links {
@@ -77,7 +77,7 @@ body {
 
 .principal__conteudo__links_subtitulo {
     font-family: var(--fonte-primaria);
-    font-family: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -90,7 +90,7 @@ body {
     text-decoration: none;
     color: var(--cor-terciaria);
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,6 +99,10 @@ body {
 
 .principal__conteudo__links__link:hover {
     background-color: var(--cor-hover);
+}
+
+.principal__imagem {
+
 }
 
 .rodape {
@@ -112,5 +116,48 @@ body {
 .rodape__texto {
     color: var(--cor-primaria);
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1100px) {
+    .principal {
+        flex-direction: column-reverse;
+        padding: 8%;
+        align-items: center;
+    }
+
+    .principal__conteudo {
+        width: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .principal__imagem {
+        width: 90%;
+    }
+}
+
+@media (max-width: 450px) {
+   
+
+    .principal__conteudo {
+        width: 90%;
+    }
+
+    .principal__conteudo__links {
+        padding: 8%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .principal__conteudo__links__link {
+        width: 90%;
+    }
+
+    .rodape__texto {
+        width: 90%;
+        text-align: center;
+    }
 }
