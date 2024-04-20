@@ -159,7 +159,7 @@ body {
     }
 
     .principal__conteudo__links__link {
-        width: 300px;
+        width: 100%;
     }
 
     .rodape__texto {
