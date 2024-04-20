@@ -115,9 +115,17 @@ body {
     font-size: 1.5rem;
 }
 
-
-
 @media (max-width: 1430px) {
+    .principal {
+        gap: 4%;
+    }
+
+    .cabecalho {
+        padding: 5% 0% 0% 8%;
+    }
+}
+
+@media (max-width: 1150px) {
     .principal {
         flex-direction: column-reverse;
         padding: 8%;
@@ -151,7 +159,7 @@ body {
     }
 
     .principal__conteudo__links__link {
-        width: 90%;
+        width: 300px;
     }
 
     .rodape__texto {
