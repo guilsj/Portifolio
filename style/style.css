@@ -115,13 +115,9 @@ body {
     font-size: 1.5rem;
 }
 
-@media (max-width: 2408) {
-    .principal {
-        gap: 24%;
-    }
-}
 
-@media (max-width: 1150px) {
+
+@media (max-width: 1430px) {
     .principal {
         flex-direction: column-reverse;
         padding: 8%;
